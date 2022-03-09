@@ -1,38 +1,57 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.mainForm{
+  width: 50%;
+  box-shadow: 0 0 20px lightgray;
+  border-radius: 6px;
+  text-align: start;
+  transition: 500ms;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
 }
+.two_props{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.address{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+img{
+  margin-top: -50px;
+  margin-bottom: 50px;
+  width: 40%;
+  z-index: 0;
+  box-shadow: 0 0 20px lightgray;
+  border-radius: 6px;
+}
+/* .main{
+  display: flex;
+  justify-content: center;
+} */
+.submit{
+  background-color: #215162 !important;
+  color: aliceblue !important;
+}
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .mainForm{
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 550px) {
+  .widthcontrol{
+    width: 90% !important;
   }
 }
